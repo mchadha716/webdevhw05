@@ -1,0 +1,32 @@
+Please fill in answers to the questions below:
+
+
+1. What's your name? 
+
+Mira Chadha
+
+2. What hostname did you deploy to?
+
+hw05.mirawebdev.xyz
+
+3. Which parts of this assignment did you have trouble with, if any?
+
+I had a lot of trouble with understanding how to connect my elixir and react code. While I am confident that my elixir code works correctly, I also had a lot of trouble with a "Phoenix.Router.NoRouteError at POST /Bulls" error that happens when I try to input a guess. After spending around 6 hours attempting to fix this (while also waiting in the queue for office hours, trying to read through documentation so that I could figure out what was wrong, reaching out to other friends in the class for their input, etc.) I decided to move on and attempt to deploy what I had. I also had quite a bit of trouble deploying.
+
+4. What part of your application state is on the server?
+
+The logic of the game is on the server, as well as the secret state.
+
+5. What part of your application state, if any, is in the browser?
+
+We used an MVC pattern and therefore have our view in the browser.
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Task 4
+ - Task 5
+ - Task 6
+ - Task 7
+ - Task 8
