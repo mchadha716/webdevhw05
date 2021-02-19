@@ -7,6 +7,8 @@ import {
   calcBullsCows
 } from "./game";
 
+import { ch_join, ch_push } from './socket';
+
 function Bulls() {
 
   const [state, setState] = useState({
@@ -15,6 +17,11 @@ function Bulls() {
   });
 
   let {secret, guesses} = state;
+  let view = secret.split("");
+
+  useEffect(() => {
+    ch_join(setState);
+  });
 
   function makeGuess(arr) {
     let guesses = arr;
@@ -51,7 +58,10 @@ function Bulls() {
   // sets text to user input
   function updateText(event) {
     let vv = event.target.value;
-    setText(vv);
+
+    ch_push(vv); // used to be ch_push(Number: vv)});
+
+//    setText(vv);                                    COMMENTED OUT FOR CH_PUSH
   }
 
   // displays warning from guess function
@@ -201,7 +211,7 @@ function Bulls() {
       </p>
     </div>
   );
+
 }
 
 export default Bulls;
-

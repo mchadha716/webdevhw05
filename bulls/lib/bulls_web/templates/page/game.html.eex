@@ -1,0 +1,12 @@
+<div className="bullsView">
+  <h3>Lives Left: {MapSet.size(@game.guesses)}</h3>
+  <p>
+    <input
+      type="text"
+      name="guess"
+      maxLength="4"
+      id="input"
+      pattern="\d{4}"
+      onChange={}
+  </p>
+</div>
