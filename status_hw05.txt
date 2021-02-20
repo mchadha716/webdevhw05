@@ -11,7 +11,9 @@ hw05.mirawebdev.xyz
 
 3. Which parts of this assignment did you have trouble with, if any?
 
-I had a lot of trouble with understanding how to connect my elixir and react code. While I am confident that my elixir code works correctly, I also had a lot of trouble with a "Phoenix.Router.NoRouteError at POST /Bulls" error that happens when I try to input a guess. After spending around 6 hours attempting to fix this (while also waiting in the queue for office hours, trying to read through documentation so that I could figure out what was wrong, reaching out to other friends in the class for their input, etc.) I decided to move on and attempt to deploy what I had. I also had quite a bit of trouble deploying.
+I had a lot of trouble with understanding how to connect my elixir and react code. While I am confident that my elixir code works correctly, I also had a lot of trouble with a "Phoenix.Router.NoRouteError at POST /Bulls" error that happens when I try to input a guess. After spending around 6 hours attempting to fix this (while also waiting in the queue for office hours, trying to read through documentation so that I could figure out what was wrong, reaching out to other friends in the class for their input, etc.) I decided to move on and attempt to deploy what I had. I also had quite a bit of trouble deploying - at first I was really struggling with an error that kept popping up about the module inets, and then after I finally managed to make it deploy, my hw05.mirawebdev.xyz only showed me my homepage. 
+
+I have been trying (unsuccessfully) to deploy using elixir for two weeks and I am still unsuccessful. This was the second week in a row that I have put over 40 hours into my work, and while I understand that successfully deploying is the most important part of the assignment, I don't know what else I can do. I have attempted to get help from office hours, I have reached out to TAs, and I have followed the professor's notes and his lectures in an attempt to mirror his work. I would really appreciate any suggestions that you have for what I can do in order to fix this.
 
 4. What part of your application state is on the server?
 
