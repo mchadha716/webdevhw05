@@ -1,25 +1,16 @@
 #!/bin/bash
 
-if [[ "x$PROD" == "x" ]]; then
-	echo "This script is for starting in production."
-	echo "Use"
-	echo "   mix phx.server"
-	exit
+export MIX_ENV=prod
+export PORT=4801
+
+CFGD=$(readlink -f ~/.config/bulls)
+
+if [ ! -e "$CFGD/base" ]; then
+    echo "run deploy first"
+    exit 1
 fi
 
-# TODO: Enable this script by removing the above.
-
-export SECRET_KEY_BASE=W68eso5YQOlbtvSNUR50N/HDWj6IaEhAwMR3LtzuBEQAefwYVbX84bvoTA7XtiGi
-export MIX_ENV=prod
-export PORT=4790
-
-echo "Stopping old copy of app, if any..."
-
-_build/prod/rel/bulls/bin/bulls stop || true
-
-echo "Starting app..."
+SECRET_KEY_BASE=$(cat "$CFGD/base")
+export SECRET_KEY_BASE
 
 _build/prod/rel/bulls/bin/bulls start
-
-# TODO: Add a systemd service file
-#       to start your app on system boot.
